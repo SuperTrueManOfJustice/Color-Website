@@ -1,0 +1,260 @@
+HTML {
+    scroll-behavior:smooth;
+}
+body {
+    margin:4px;
+}
+#ColorTest {
+    width:100px;
+    height:100px;
+}
+h1,span {
+    width:25em;
+    height:32px;
+    font-size:20px;
+}
+
+#ItemListComboBox {
+top:30px;
+right:650px;
+background-color:#1c93e9;
+position:absolute;
+width:500px;
+z-index:2;
+}
+#FontButton {
+    top:15px;
+    left:630px;
+    position:absolute;
+}
+#StartButton {
+    top:15px;
+    right:500px;
+    position:absolute;
+}
+#StopButton {
+    top:15px;
+    right:350px;
+    position:absolute;
+}
+#ClearButton {
+    top:15px;
+    right:50px;
+    position:absolute;
+}
+#SpeedButton {
+    top:15px;
+    right:200px;
+    position:absolute;
+}
+.Buttons {
+    background-color:#779ae7;
+    color:#ffffff;
+    width:100px;
+    height:50px;
+    position:absolute;
+    z-index:2;
+    border-radius:14px;
+}
+
+.ButtonsAnimations {
+    animation:1s linear 1 scaling;
+}
+/* .Buttons:hover {
+    transition:all 1s ease;
+    transform:scale(1.1);
+    background-color:aliceblue;
+    color:aquamarine;
+} */
+@keyframes scaling {
+    0%,100% {
+        transform:scale(1);
+        background-color:#779ae7;
+        color:#ffffff;
+    }
+    50% {
+        transform:scale(1.1);
+        background-color:aliceblue;
+        color:aquamarine;
+    }
+}
+#MAIN {
+    top:2px;
+    font-size:30px;
+    color:white;
+    position:absolute;
+    width:auto;
+    height:auto;
+    left:15px;
+    position:absolute;
+    z-index:2;
+}
+#CurrentSpeed {
+    top:15px;
+    color:#ffffff;
+    position:absolute;
+    width:auto;
+    height:auto;
+    left:400px;
+    z-index:2;
+}
+#container {
+    background-color:#07259b;
+    width:99.1vw;
+    height:80px;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    border-bottom:4px solid  rgb(49 , 152 , 242);
+    z-index:2;
+    }
+footer {
+background-color:#07259b;
+width:99.62vw;
+height:80px;
+position:relative;
+top:0;
+left:0;
+margin:-20px;
+padding:0;
+border-top:4px solid  rgb(49 , 152 , 242);
+border-bottom:4px solid  rgb(49 , 152 , 242);
+z-index:2;
+}
+footer h1 {
+    text-align:center;
+    transform:translate(140%,60%);
+    color:#4206c9;
+    background-color:#1c93e9;
+    height:auto;
+}
+a:active {
+    color:#0fff69;
+}
+a:hover {
+    color:#07003d;
+}
+
+a:after {
+    color:#480519;
+}
+a:before {
+    color:#9873a7;
+}
+/* #GoTop {
+    position:relative;
+    font-size:30px;
+    bottom:30%;
+    left:1%;
+    border:2px solid #1b5e99;
+    background-color: #9efa95;
+} */
+/* Both codes gotten rid of because of the size and position, what is planned to do is a horizontal
+arrow that will point the users towards up or down, so Arrow UP on the right and arrow DOWN to go down.
+*/
+#GoBottom {
+    position:absolute;
+    font-size:23px;
+    top:3%;
+    left:13%;
+    border:2px solid #1b5e99;
+    background-color: #9efa95;
+    z-index:3;
+}
+.CopyButton {
+    color:#e0272f;
+    font-size: 15px;
+    background-color:#e8d553;
+    position:absolute;
+    left:370px;
+    width:200px;
+    height:32px;
+}
+.CopyButton:hover {
+    background-color:#e0272f;
+    color:#e8d553;
+}
+/* .CopyButton:hover {
+    animation:1s linear 1 CoolAnimation;
+} */
+@keyframes CoolAnimation {
+    0%,100% {
+        Background-color:red;
+    }
+    50% {
+        background-color: #9efa95;
+    }   
+}
+@keyframes CopyHover {
+    0%,100% {
+        color:rgb(120, 242, 12);
+        background-color:#371363;
+    }
+    50% {
+        color:crimson;
+        background-color:#0fff69;
+    }
+}
+#BackgroundColor {
+    color:blue;
+}
+#Text {
+    color:#1b5e99;
+}
+.LogButton {
+    color:rgb(120, 242, 12);
+    font-size: 15px;
+    background-color:#371363;
+    position:absolute;
+    left:240px;
+    top:25px;
+    width:200px;
+    height:32px;
+}
+.LogButtonhover {
+    animation:1s linear 1 HoveringAnimation;
+}
+@keyframes HoveringAnimation {
+    0%,100% {
+        color:rgb(120, 242, 12);
+        background-color:#371363;
+    }
+    50% {
+        color:crimson;
+        background-color:#0fff69;
+    }
+}
+#ShowcaseColorPicked {
+    position:absolute;
+    right:500px;
+    top:87px;
+    width:250px;
+    height:70px;
+    background-color:black;
+    visibility:hidden;
+    color:white;
+    text-align:Center;
+    font-size:37px;
+    border:6px solid black;
+    border-radius:13px;
+}
+.Colors {
+    animation:2s linear infinite spinny;
+}
+@keyframes spinny {
+    0% {
+        transform:rotate(0deg);
+        box-shadow: 0 0 100px 2px red;
+    }
+    50% {
+        transform:rotate(180deg);
+        box-shadow: 0 0 100px 20px rgb(0, 255, 166);
+    }
+    100% {
+        transform:rotate(360deg);
+        box-shadow: 0 0 100px 2px red;
+
+    }
+}

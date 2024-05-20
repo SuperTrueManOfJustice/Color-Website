@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href ="Colors.css">
+    <title>Color Generator</title>
+</head>
+<body>
+    <br><br><br><br><br>
+    <span id = "ColorTest"> </span>
+  
+    <header id = "container"> <!-- header thing --></header>
+    <button id ="GoBottom" onclick="GODOWN()">Go Down</button>
+    <button id = "StartButton" class = "Buttons">Start Generating</button>
+    <button id = "StopButton" class = "Buttons">Stop Generating</button>
+    <button id = "ClearButton" class = "Buttons">Clear Generation</button>
+    <button id ="FontButton" class = "Buttons"> Change Font Family </button>
+    <button id ="SpeedButton" class ="Buttons"> Change Generation Speed </button>
+    <h1 id = "CurrentSpeed">Current Speed:1s</h1>
+    <h1 id = "MAIN">Generate Colors</h1>
+
+    <select id="ItemListComboBox"> <!-- Font List here.-->
+        <option>Arial, sans-serif</option>
+        <option>"Times New Roman", Times, serif</option>
+        <option>Verdana, Geneva, sans-serif</option>
+        <option>"Courier New", Courier, monospace</option>
+        <option>"Comic Sans MS", cursive</option>
+        <option>Georgia, serif</option>
+        <option>"Trebuchet MS", Helvetica, sans-serif</option>
+        <option>"Arial Black", Gadget, sans-serif</option>
+        <option>Impact, Charcoal, sans-serif</option>
+        <option>"Lucida Console", Monaco, monospace</option>
+        <option>"Palatino Linotype", "Book Antiqua", Palatino, serif</option>
+        <option>"Lucida Sans Unicode", "Lucida Grande", sans-serif</option>
+        <option>"MS Sans Serif", Geneva, sans-serif</option>
+        <option>"MS Serif", "New York", serif</option>
+        <option>"Bookman Old Style", serif</option>
+        <option>Garamond, serif</option>
+        <option>"Arial Narrow", sans-serif</option>
+        <option>"Century Gothic", sans-serif</option>
+        <option>"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif</option>
+        <option>"Gill Sans", "Gill Sans MT", Calibri, sans-serif</option>
+        <option>Impact, fantasy</option>
+        <option>Copperplate, fantasy</option>
+        <option>Brush Script MT, cursive</option>
+        <option>Courier, monospace</option>
+        <option>Palatino, serif</option>
+        <option>Optima, sans-serif</option>
+        <option>Garamond, serif</option>
+        <option>Baskerville, serif</option>
+        <option>Rockwell, serif</option>
+        <option>Helvetica, sans-serif</option>
+        <option>Geneva, sans-serif</option>
+        <option>Tahoma, sans-serif</option>
+        <option>Helvetica Neue, Helvetica, Arial, sans-serif</option>
+        <option>Geneva, Tahoma, Verdana, sans-serif</option>
+        <option>Helvetica, Arial, sans-serif</option>
+        <option>Arial Black, Gadget, sans-serif</option>
+        <option>Impact, Charcoal, sans-serif</option>
+        <option>Gill Sans, Calibri, sans-serif</option>
+        <option>Myriad Pro, Arial, sans-serif</option>
+        <option>Futura, Trebuchet MS, Arial, sans-serif</option>
+        <option>Century Gothic, sans-serif</option>
+        <option>Lucida Grande, sans-serif</option>
+        <option>Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif</option>
+        <option>Palatino Linotype, Book Antiqua, Palatino, serif</option>
+        <option>Times New Roman, Times, serif</option>
+        <option>Georgia, serif</option>
+        <option>Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif</option>
+        <option>Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif</option>
+        <option>Franklin Gothic Medium, Arial, sans-serif</option>
+        <option>"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif</option>
+        <option>Verdana, Geneva, sans-serif</option>
+        <option>Geneva, Tahoma, Verdana, sans-serif</option>
+        <option>Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif</option>
+        <option>Arial, Helvetica, sans-serif</option>
+        <option>"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif</option>
+        <option>Verdana, Geneva, "DejaVu Sans", sans-serif</option>
+        <option>Geneva, Tahoma, "DejaVu Sans", sans-serif</option>
+        <option>Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif</option>
+        <option>Franklin Gothic Medium, "Arial Narrow", Arial, sans-serif</option>
+        <option>"Futura PT", "Century Gothic", "Avant Garde", sans-serif</option>
+        <option>"Gill Sans", "Gill Sans MT", Calibri, sans-serif</option>
+        <option>"Gill Sans", "Gill Sans MT", "Calibri Light", sans-serif</option>
+        <option>Myriad Pro, Arial, sans-serif</option>
+        <option>Futura, "Century Gothic", "Avant Garde", sans-serif</option>
+        <option>Century Gothic, "Trebuchet MS", Arial, sans-serif</option>
+        <option>Arial Black, Gadget, "sans-serif"</option>
+        <option>Impact, Charcoal, "sans-serif"</option>
+        <option>Geneva, Tahoma, Verdana, "sans-serif"</option>
+        <option>"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "sans-serif"</option>
+        <option>"Gill Sans", "Gill Sans MT", Calibri, "sans-serif"</option>
+        <option>Myriad Pro, Arial, "sans-serif"</option>
+        <option>Futura, "Century Gothic", "Avant Garde", "sans-serif"</option>
+        <option>Century Gothic, "Trebuchet MS", Arial, "sans-serif"</option>
+        <option>Arial Black, Gadget, "sans-serif"</option>
+        <option>Impact, Charcoal, "sans-serif"</option>
+        <option>Geneva, Tahoma, Verdana, "sans-serif"</option>
+    </select> <!-- End of List.-->
+    <a href ="#ColorTest"></a>
+    <div id = "ShowcaseColorPicked">Color Picked!!!</div>
+    <footer>
+        <h1 id ="CountLabel">Inside this sandwich is where everything will be.</h1>
+        <button id = "StartButton" class = "Buttons">Start Generating</button>
+        <button id = "StopButton" class = "Buttons">Stop Generating</button>
+        <button id = "ClearButton" class = "Buttons">Clear Generation</button>
+        <button id ="SpeedButton" class ="Buttons"> Change Generation Speed </button>
+        <button class = "LogButton" id = "Logging" onclick ="LogFunction()"> Color Log </button>
+        
+    </footer>
+    <!-- <script src ="Colors.js"></script> -->
+    <script src ="ColorsTESTJS.js"></script>
+</body>
+</html>
