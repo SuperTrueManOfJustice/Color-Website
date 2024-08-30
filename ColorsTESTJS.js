@@ -34,6 +34,13 @@ const LogButton1 = LogButtons[0];
 
 const GoTop = document.getElementById("GoTop");
 const ShowcaseColorPicked = document.getElementById("ShowcaseColorPicked");
+
+const Container = document.getElementById("container");
+
+const UpArrowPicture = document.getElementById("UpArrow");
+const DownArrowPicture = document.getElementById("DownArrow");
+
+
 //All buttons,Ids,classes,etc above
 
 let b; //this is what will be used to stop and enable color generation
@@ -141,7 +148,45 @@ function GenerateColors() {
     Color:${SecondHashedColors}'> Text Color --> ${SecondHashedColors} \t\t <button class = "CopyButton TextColorButton" onclick = "CopyFunction()"> Copy Text </button>
     </h1>`
     + "-------------------------------------------------------------------------- <br>";
-    CopyFunction(); //call this incredible function so it isn't void....?
+
+    /*
+#UpArrow {
+    width:150px;
+    position:fixed;
+    right:50px;
+    top:100px;
+    cursor:pointer;
+}
+#DownArrow {
+    width:150px;
+    position:fixed;
+    right:50px;
+    bottom:100px;
+    cursor:pointer;
+    transform:rotate(180deg);
+}
+*/
+if (n < 13) {
+    UpArrowPicture.style.visibility = 'hidden';
+    DownArrowPicture.style.visibility = 'hidden';
+}
+else {
+    UpArrowPicture.style.visibility ='visible';
+    UpArrowPicture.style.width = '150px';
+    UpArrowPicture.style.position = 'fixed';
+    UpArrowPicture.style.right = '50px';
+    UpArrowPicture.style.top = '100px';
+    UpArrowPicture.style.cursor = 'pointer';
+
+    DownArrowPicture.style.visibility ='visible';
+    DownArrowPicture.style.width = '150px';
+    DownArrowPicture.style.position = 'fixed';
+    DownArrowPicture.style.right = '50px';
+    DownArrowPicture.style.bottom = '100px';
+    DownArrowPicture.style.cursor = 'pointer';
+    DownArrowPicture.style.transform = 'rotate(180deg)';
+}
+CopyFunction(); //call this incredible function so it isn't void....?
 }
 //-----------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------
@@ -297,6 +342,10 @@ ClearButton.addEventListener("click", () => {
         BackgroundArray = [];
         n = 0;
         n2 = 0;
+        UpArrowPicture.style.visibility = 'hidden';
+        DownArrowPicture.style.visibility = 'hidden';
+        document.body.height = '1114.5px';
+        Container.scrollIntoView();
     }
     catch(e)
     {
@@ -316,6 +365,10 @@ SecondClearButton.addEventListener("click", () => {
         BackgroundArray = [];
         n = 0;
         n2 = 0;
+        UpArrowPicture.style.visibility = 'hidden';
+        DownArrowPicture.style.visibility = 'hidden';
+        document.body.height = '1114.5px';
+        Container.scrollIntoView();
     }
     catch(e)
     {
@@ -481,4 +534,7 @@ async function DoFunctions() {
 DoFunctions(); //call the funciton
 function GODOWN() {
     LoggingButtonID.scrollIntoView();
+}
+function GOUP() {
+    Container.scrollIntoView();
 }

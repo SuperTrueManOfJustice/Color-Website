@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href ="Colors.css">
+    <!-- <link rel ="stylesheet" href ="ColorsCssTest.css"> -->
     <title>Color Generator</title>
 </head>
 <body>
     <br><br><br><br><br>
     <span id = "ColorTest"> </span>
   
-    <header id = "container"> <!-- header thing --></header>
-    <button id ="GoBottom" onclick="GODOWN()">Go Down</button>
+    <header id = "container"> <!-- header thing -->
     <button id = "StartButton" class = "Buttons">Start Generating</button>
     <button id = "StopButton" class = "Buttons">Stop Generating</button>
     <button id = "ClearButton" class = "Buttons">Clear Generation</button>
@@ -18,7 +18,6 @@
     <button id ="SpeedButton" class ="Buttons"> Change Generation Speed </button>
     <h1 id = "CurrentSpeed">Current Speed:1s</h1>
     <h1 id = "MAIN">Generate Colors</h1>
-
     <select id="ItemListComboBox"> <!-- Font List here.-->
         <option>Arial, sans-serif</option>
         <option>"Times New Roman", Times, serif</option>
@@ -97,16 +96,21 @@
         <option>Impact, Charcoal, "sans-serif"</option>
         <option>Geneva, Tahoma, Verdana, "sans-serif"</option>
     </select> <!-- End of List.-->
+</header>
     <a href ="#ColorTest"></a>
     <div id = "ShowcaseColorPicked">Color Picked!!!</div>
+
+    <img src ="Arrow-Up-icon.png" id = "UpArrow" onclick ="GOUP()">
+    <img src ="Arrow-Up-icon.png" id ="DownArrow" onclick = "GODOWN()">
+
     <footer>
-        <h1 id ="CountLabel">Inside this sandwich is where everything will be.</h1>
         <button id = "StartButton" class = "Buttons">Start Generating</button>
         <button id = "StopButton" class = "Buttons">Stop Generating</button>
         <button id = "ClearButton" class = "Buttons">Clear Generation</button>
         <button id ="SpeedButton" class ="Buttons"> Change Generation Speed </button>
         <button class = "LogButton" id = "Logging" onclick ="LogFunction()"> Color Log </button>
-        
+        <h1 id ="CountLabel">Inside this sandwich is where everything will be.</h1>
+
     </footer>
     <!-- <script src ="Colors.js"></script> -->
     <script src ="ColorsTESTJS.js"></script>
